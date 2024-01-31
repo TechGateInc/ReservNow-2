@@ -1,7 +1,14 @@
+@font-face {
+  font-family: "Circular";
+  src: url("../../public/fonts/Circular/Circular-normal-400-100.ttf")
+    format("truetype");
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: var(--font-roboto);
 }
 
 html,

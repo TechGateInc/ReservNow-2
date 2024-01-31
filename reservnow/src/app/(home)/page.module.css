@@ -1,0 +1,13 @@
+.landingPageContainer {
+  margin-top: 120px;
+  width: 100%;
+  padding: 0 80px; 
+  box-sizing: border-box; 
+}
+.landingPageContainer .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  gap: 50px;
+}
+
+
