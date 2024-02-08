@@ -77,6 +77,7 @@ function Review() {
           </div>
         ))}
       </div>
+      <button className="showAllReviews">Show all 41 reviews</button>
     </div>
   );
 }

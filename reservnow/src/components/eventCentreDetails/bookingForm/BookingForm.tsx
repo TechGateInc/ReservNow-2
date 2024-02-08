@@ -14,20 +14,11 @@ import {
 import AuthenticationButton from "@/components/authenticationBtn/AuthenticationButton";
 
 function BookingForm() {
-  const currentDateTime = new Date(); // Get the current date and time
-
   // Set startTime to this time tomorrow
-  const [startTime, setStartTime] = useState<Date | null>(
-    setMinutes(
-      setHours(addDays(currentDateTime, 1), currentDateTime.getHours()),
-      currentDateTime.getMinutes()
-    ) as Date
-  );
+  const [startTime, setStartTime] = useState<Date | null>();
 
   // Set endTime to one hour after startTime
-  const [endTime, setEndTime] = useState<Date | null>(
-    addHours(startTime || currentDateTime, 1) as Date
-  );
+  const [endTime, setEndTime] = useState<Date | null>();
 
   const currentDate = new Date();
   const minDateTomorrow = addDays(currentDate, 1); // Set minDate to tomorrow
@@ -64,6 +55,7 @@ function BookingForm() {
             dateFormat="MMMM d, yyyy h:mm aa"
             className="datePicker"
             minDate={minDateTomorrow} // Set minDate to tomorrow
+            placeholderText="Click to select a date and time"
           />
         </div>
         <div className="formItem">
@@ -76,6 +68,7 @@ function BookingForm() {
             dateFormat="MMMM d, yyyy h:mm aa"
             className="datePicker"
             minDate={minDateTomorrow} // Set minDate to tomorrow
+            placeholderText="Click to select a date and time"
           />
         </div>
         <div className="formItem">
@@ -88,25 +81,27 @@ function BookingForm() {
       </div>
       <AuthenticationButton text="ReservNow" onClick={{}} />
       <div className="text">You won't be charged yet</div>
-      <div className="receipt">
-        <div className="receiptText">
-          <div style={{ textDecoration: "underline" }}>
-            ₦2500 x {totalHours} hour(s)
+      {totalHours > 0 && (
+        <div className="receipt">
+          <div className="receiptText">
+            <div style={{ textDecoration: "underline" }}>
+              ₦2500 x {totalHours} hour(s)
+            </div>
+            <div>₦7500</div>
           </div>
-          <div>₦7500</div>
-        </div>
-        <div className="receiptText">
-          <div style={{ textDecoration: "underline" }}>
-            ReservNow service fee
+          <div className="receiptText">
+            <div style={{ textDecoration: "underline" }}>
+              ReservNow service fee
+            </div>
+            <div>₦1000</div>
           </div>
-          <div>₦1000</div>
+          <div className="horinzontalLine"></div>
+          <div className="total">
+            <div>Total before taxes</div>
+            <div>₦8500</div>
+          </div>
         </div>
-        <div className="horinzontalLine"></div>
-        <div className="total">
-          <div>Total before taxes</div>
-          <div>₦8500</div>
-        </div>
-      </div>
+      )}
     </div>
   );
 }

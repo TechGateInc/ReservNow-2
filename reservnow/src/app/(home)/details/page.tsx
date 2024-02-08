@@ -25,7 +25,7 @@ function details() {
           </div>
         </div>
         <div className={styles.horinzontalLine}></div>
-        <div className={styles.rating}>
+        <div className={styles.reviewContainer}>
           <Review />
         </div>
       </div>
