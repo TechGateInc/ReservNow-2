@@ -1,0 +1,56 @@
+.reviewHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.reviewHeader .title {
+  font-size: 25px;
+  font-weight: bold;
+}
+.reviewHeader .rating {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+.reviewContent {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+.reviewCard {
+  width: 450px;
+  margin-bottom: 20px;
+}
+.reviewCard .user {
+  display: flex;
+  align-items: center;
+}
+.reviewCard .userProfilePic {
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  border-radius: 50%;
+}
+.reviewCard .userInfo {
+  padding-left: 15px;
+}
+.reviewCard .rating {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  font-weight: bold;
+}
+.reviewCard .reviewText {
+  margin-top: 10px;
+}
+.reviewCard .showMoreBtn {
+  border: none;
+  background-color: white;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 20px;
+  text-decoration: underline;
+  cursor: pointer;
+}

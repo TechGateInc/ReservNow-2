@@ -1,0 +1,23 @@
+.userActionsPopup {
+    width: 200px;
+    background-color: white;
+    position: absolute;
+    top: 70px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    right: 0;    
+  }
+  .userAction {
+    width: 100%;
+    padding: 15px;
+  }
+  .userAction:hover {
+    background-color: #dddddd;
+    cursor: pointer;
+  }
+  .horinzontalLine {
+    width: 100%;
+    height: 1px;
+    background-color: #dddddd;
+  }
+  

@@ -1,0 +1,50 @@
+.detailsPageContainer {
+  margin-top: 20px;
+  width: 100%;
+  padding: 0 200px;
+}
+.detailsRoot {
+  height: 100vh;
+}
+.detailsRoot .header {
+  border-bottom: 1px solid #f0f0f0;
+  background-color: white;
+  width: 100%;
+  padding: 0 200px;
+}
+.detailsPageContainer .title {
+  font-weight: bold;
+  font-size: 25px;
+}
+.detailsGalleryContainer {
+  margin-top: 30px;
+}
+.mainDetails {
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.detailsPageContainer .left {
+  width: 60%;
+  padding-right: 80px;
+}
+.detailsPageContainer .bookingForm {
+  height: 565px;
+  position: sticky;
+  top: 20px;
+}
+.detailsRoot .horinzontalLine {
+  width: 100%;
+  height: 0.5px;
+  background-color: #dddddd;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.rating {
+  width: 100%;
+  height: 500px;
+  /* background-color: red; */
+  margin-bottom: 100px;
+}

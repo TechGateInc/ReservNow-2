@@ -1,0 +1,78 @@
+.detailsGalleryContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 400px;
+  /* background-color: red; */
+}
+.detailsLeft {
+  width: 49.7%;
+  height: 100%;
+  /* background-color: green; */
+  border-radius: 20px 0px 0px 20px;
+}
+.detailsLeft img {
+  border-radius: 20px 0px 0px 20px;
+}
+.detailsRight {
+  width: 49.7%;
+  height: 100%;
+  /* background-color: yellow; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.detailsRight .top,
+.detailsRight .bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 49.5%;
+}
+.detailsRight .top .left,
+.detailsRight .top .right,
+.detailsRight .bottom .left,
+.detailsRight .bottom .right {
+  width: 49.8%;
+  height: 100%;
+}
+.detailsRight .top .right img {
+  border-radius: 0px 20px 0px 0px;
+}
+.detailsRight .bottom .right img {
+  border-radius: 0px 0px 20px 0px;
+}
+.show-all-photos {
+  position: relative;
+  display: inline-block;
+}
+.show-all-photos button {
+  position: absolute;
+  bottom: -185px;
+  right: 20px;
+  width: 140px;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.show-all-photos button:hover {
+  background-color: #f6f2f0;
+}
+.detailsGalleryContainer img {
+  transition: filter 0.3s ease;
+  background-color: black;
+}
+.detailsGalleryContainer img:hover {
+  filter: brightness(0.7); /* Make the image darker */
+  cursor: pointer;
+}

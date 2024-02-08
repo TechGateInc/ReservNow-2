@@ -1,0 +1,99 @@
+.authRoot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+.authcontainer {
+  width: 550px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 20px;
+}
+.authcontainer .cancelBtnContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+.authcontainer .cancelBtn {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.authcontainer .cancelBtn:hover {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #dddddddd;
+}
+.authHeader {
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 20px;
+}
+.authTitle {
+  font-size: 30px;
+  margin-top: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.authcontainer .formItem {
+  border: 1px solid #dddddddd;
+  padding: 10px 12px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.authcontainer .formInput {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+.authcontainer .notice {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.or {
+    margin-top: 20px;
+}
+.left-line {
+  float: left;
+  width: 45%;
+  margin-top: 1.8%;
+}
+.or p {
+  text-align: center;
+}
+.right-line {
+  float: right;
+  width: 45%;
+  margin-top: 1.8%;
+}
+.withGoogle {
+  text-align: center;
+  border: 1px solid black;
+  padding: 15px 15px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.continueWith {
+  height: 20px;
+  width: 20px;
+}
+.with {
+  margin-top: 30px;
+}

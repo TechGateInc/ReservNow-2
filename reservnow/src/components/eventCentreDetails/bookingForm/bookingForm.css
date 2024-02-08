@@ -1,0 +1,73 @@
+.bookingFormRoot {
+  width: 350px;
+  /* height: 450px; */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  border: 1px solid #dddd;
+  border-radius: 20px;
+  padding: 20px;
+}
+.bookingFormRoot .Form {
+  margin-top: 20px;
+}
+.bookingFormRoot .formItem {
+  display: flex;
+  flex-direction: column;
+  /* background-color: blue; */
+}
+.bookingFormRoot .formItem label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  padding-left: 15px;
+  font-weight: bold;
+}
+.datePicker {
+  border: 1px solid #dddd;
+  padding: 15px;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  outline: none;
+  /* background-color: red; */
+}
+.bookingFormRoot .notesLabel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  /* background-color: red; */
+  font-size: 14px;
+  margin-bottom: 5px;
+  padding-left: 15px;
+  font-weight: bold;
+}
+.bookingFormRoot .notesInput {
+  border: none;
+  border-bottom: 1px solid #dddd;
+  padding: 10px 10px 10px 15px;
+  width: 100%;
+  margin-bottom: 20px;
+  outline: none;
+}
+.bookingFormRoot .text {
+  text-align: center;
+  color: grey;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+.bookingFormRoot .receiptText {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.bookingFormRoot .total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-weight: bold;
+}

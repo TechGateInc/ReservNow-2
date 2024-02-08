@@ -1,0 +1,79 @@
+.mainDetailsLeftRoot .capacity {
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.mainDetailsLeftRoot .rating {
+  display: flex;
+  align-items: center;
+}
+.mainDetailsLeftRoot .ratingText {
+  font-weight: bold;
+  text-decoration: underline;
+  padding-left: 5px;
+  cursor: pointer;
+}
+.mainDetailsLeftRoot .titleDesc {
+  font-size: 20px;
+  font-weight: bold;
+}
+.mainDetailsLeftRoot .horinzontalLine {
+  width: 100%;
+  height: 0.5px;
+  background-color: #dddddd;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.mainDetailsLeftRoot .host {
+  display: flex;
+  align-items: center;
+}
+.mainDetailsLeftRoot .hostProfilePic {
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  border-radius: 50%;
+}
+.mainDetailsLeftRoot .hostInfo {
+  padding-left: 10px;
+}
+.mainDetailsLeftRoot .hostInfo p {
+  font-size: 16px;
+  font-weight: bold;
+}
+.mainDetailsLeftRoot .hostInfo span {
+  font-size: 14px;
+  color: grey;
+}
+.mainDetailsLeftRoot .container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.mainDetailsLeftRoot .text {
+  padding-left: 20px;
+}
+.mainDetailsLeftRoot .amenitiesList {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.mainDetailsLeftRoot .amenitiesList .amenitiesItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.showAllAmenities {
+  padding: 15px 20px;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.showAllAmenities:hover {
+  background-color: #f6f2f0;
+}

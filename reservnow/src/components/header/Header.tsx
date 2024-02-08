@@ -1,24 +1,51 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./header.css";
 import { IoSearchOutline } from "react-icons/io5";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { FaCircleUser } from "react-icons/fa6";
+import UserAction from "@/modals/useraction/UserAction";
+import Authentication from "@/modals/authentication/Authentication";
+import Signup from "@/modals/authentication/signup/Signup";
+import Login from "@/modals/authentication/login/Login";
+import Link from "next/link";
 
-function Header() {
+function Header(props: any) {
   const [userNav, setUserNav] = useState(false);
 
   const handleUserNavClick = () => {
     setUserNav((prevState) => !prevState);
   };
 
+  const [auth, setAuth] = useState(false);
+  const [signup, setSignup] = useState(false);
+  const [login, setLogin] = useState(false);
+
+  useEffect(() => {
+    if (auth || signup || login) {
+      // Disable scrolling when signup is true
+      document.documentElement.style.overflow = "hidden";
+      document.body.style.overflow = "hidden";
+    } else {
+      // Enable scrolling when signup is false
+      document.documentElement.style.overflow = "auto";
+      document.body.style.overflow = "auto";
+    }
+
+    // Cleanup function
+    return () => {
+      document.documentElement.style.overflow = "auto";
+      document.body.style.overflow = "auto";
+    };
+  }, [auth, signup, login]);
+
   return (
-    <div className="headerRoot">
+    <div className={`headerRoot`}>
       <div className="headerContainer">
-        <div>
+        <Link href={"/"}>
           <img src="/images/RNL.svg" alt="ReservNow" className="logo" />
-        </div>
+        </Link>
         <div className="headerSearchBar">
           <div>Anywhere</div>
           <div className="verticalLine"></div>
@@ -38,26 +65,18 @@ function Header() {
         </div>
       </div>
       {userNav === true && (
-        <div className="userActionsPopup">
-          <div
-            className="userAction"
-            style={{ borderTopLeftRadius: "10px", borderTopRightRadius: "10%" }}
-          >
-            Log in
-          </div>
-          <div className="userAction">Sign Up</div>
-          <div className="horinzontalLine"></div>
-          <div
-            className="userAction"
-            style={{
-              borderBottomLeftRadius: "10px",
-              borderBottomRightRadius: "10px",
-            }}
-          >
-            Reserve your centre
-          </div>
-        </div>
+        <UserAction setUserNav={setUserNav} setAuth={setAuth} />
       )}
+      {
+        <Authentication
+          auth={auth}
+          setAuth={setAuth}
+          setSignup={setSignup}
+          setLogin={setLogin}
+        />
+      }
+      {<Signup signup={signup} setSignup={setSignup} />}
+      {<Login login={login} setLogin={setLogin} />}
     </div>
   );
 }
