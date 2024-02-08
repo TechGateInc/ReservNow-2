@@ -24,7 +24,18 @@ function MainDetailsLeft() {
       </div>
       <div className="horinzontalLine"></div>
       <div className="host">
-        <div className="hostProfilePic"></div>
+        <div className="hostProfilePic">
+        <img
+                  src="/images/profilePic1.jpg"
+                  alt=""
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                    borderRadius: "50%",
+                  }}
+                />
+        </div>
         <div className="hostInfo">
           <p>Hosted by John Smith</p>
           <span>Been a host for 5 years</span>
