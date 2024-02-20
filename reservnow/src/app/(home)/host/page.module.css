@@ -1,0 +1,55 @@
+.hostRoot {
+  height: 100vh;
+}
+.hostHeader {
+  width: 100%;
+  position: fixed;
+  /* background-color: red; */
+  padding: 20px 80px;
+}
+.hostHeader,
+.hostHeader .right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hostRoot .logo {
+  height: 20px;
+  margin-top: 12px;
+  cursor: pointer;
+}
+.hostHeader .right button {
+  padding: 15px 20px;
+  border: none;
+  background-color: #de1261;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.hostContentContainer {
+  padding-top: 90px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.hostContent {
+  display: flex;
+  width: 100%;
+  /* background-color: green; */
+  height: 80vh;
+}
+.hostContent .left {
+  /* background-color: red; */
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hostContent .right {
+  /* background-color: yellow; */
+  width: 50%;
+  height: 100%;
+}

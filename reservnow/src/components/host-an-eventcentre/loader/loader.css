@@ -1,0 +1,78 @@
+.loaderBackground {
+  background-color: rgb(201, 201, 201);
+  width: 100%;
+  height: 4px;
+}
+.pageLoader {
+  height: 4px;
+  width: 100%;
+  background-color: black;
+}
+.pageLoader {
+  transition: width 0.3s ease-in-out;
+}
+
+.loaderZeroWidth {
+  width: 0%;
+}
+
+.loaderMediumWidth {
+  width: 0%;
+  animation: 1s ease-in-out forwards;
+}
+
+.loaderMedium2Width {
+  width: 7.5%;
+  animation: 1s ease-in-out forwards;
+}
+
+.loaderMedium3Width {
+  width: 15%;
+  animation: 3s ease-in-out forwards;
+}
+
+.loaderMedium4Width {
+  width: 22.5%;
+  animation: 3s ease-in-out forwards;
+}
+
+.loaderMedium5Width {
+  width: 30%;
+  animation: 3s ease-in-out forwards;
+}
+.loaderMedium6Width {
+  width: 37.5%;
+  animation: 3s ease-in-out forwards;
+}
+.loaderMedium7Width {
+  width: 45%;
+  animation: 3s ease-in-out forwards;
+}
+.loaderMedium8Width {
+  width: 52.5%;
+  animation: 3s ease-in-out forwards;
+}
+.loaderMedium9Width {
+  width: 60%;
+  animation: 3s ease-in-out forwards;
+}
+.loaderMedium10Width {
+  width: 67.5%;
+  animation: 3s ease-in-out forwards;
+}
+.loaderMedium11Width {
+  width: 75%;
+  animation: 3s ease-in-out forwards;
+}
+.loaderMedium12Width {
+  width: 82.5%;
+  animation: 3s ease-in-out forwards;
+}
+.loaderMedium13Width {
+  width: 90%;
+  animation: 3s ease-in-out forwards;
+}
+.loader-full-width {
+  width: 100%;
+  animation: 3s ease-in-out forwards;
+}

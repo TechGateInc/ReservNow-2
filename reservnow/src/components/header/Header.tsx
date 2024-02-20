@@ -24,17 +24,18 @@ function Header(props: any) {
 
   useEffect(() => {
     if (auth || signup || login) {
-      // Disable scrolling when signup is true
+      // Disable scrolling when auth, signup, or login is true
       document.documentElement.style.overflow = "hidden";
       document.body.style.overflow = "hidden";
     } else {
-      // Enable scrolling when signup is false
+      // Enable scrolling when none of auth, signup, or login is true
       document.documentElement.style.overflow = "auto";
       document.body.style.overflow = "auto";
     }
 
     // Cleanup function
     return () => {
+      // Restore scrolling to default when component unmounts
       document.documentElement.style.overflow = "auto";
       document.body.style.overflow = "auto";
     };
@@ -57,7 +58,16 @@ function Header(props: any) {
           </div>
         </div>
         <div className="userNavContainer">
-          <div className="addEventCentre">Add event centre</div>
+          <Link
+            href={`/host`}
+            style={{
+              textDecoration: "none",
+              color: "black",
+              cursor: "pointer",
+            }}
+          >
+            <div className="addEventCentre">Add event centre</div>
+          </Link>
           <div className="userNav" onClick={handleUserNavClick}>
             <RxHamburgerMenu fontSize={15} />
             <FaCircleUser fontSize={30} />

@@ -10,7 +10,6 @@ type Props = {
 
 function UserAction({ setUserNav, setAuth }: Props) {
   return (
-    // <div className="userActionRoot">
       <div className="userActionsPopup">
         <div
           className="userAction"
@@ -43,7 +42,6 @@ function UserAction({ setUserNav, setAuth }: Props) {
           Reserve your centre
         </div>
       </div>
-    // </div>
   );
 }
 

@@ -13,7 +13,6 @@
 .bookingFormRoot .formItem {
   display: flex;
   flex-direction: column;
-  /* background-color: blue; */
 }
 .bookingFormRoot .formItem label {
   font-size: 14px;

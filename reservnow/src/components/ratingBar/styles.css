@@ -1,0 +1,6 @@
+.rankItem {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 5px;
+}

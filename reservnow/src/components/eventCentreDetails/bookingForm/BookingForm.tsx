@@ -4,21 +4,23 @@ import "./bookingForm.css";
 import { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import {
-  setHours,
-  setMinutes,
-  differenceInHours,
-  addHours,
-  addDays,
-} from "date-fns";
+import { addDays } from "date-fns";
 import AuthenticationButton from "@/components/authenticationBtn/AuthenticationButton";
 
-function BookingForm() {
+interface BookingFormProps {
+  startTime: any;
+  setStartTime: any;
+  endTime: any;
+  setEndTime: any;
+  totalHours: number;
+}
+
+function BookingForm(props: BookingFormProps) {
   // Set startTime to this time tomorrow
-  const [startTime, setStartTime] = useState<Date | null>();
+  // const [startTime, setStartTime] = useState<Date | null>();
 
   // Set endTime to one hour after startTime
-  const [endTime, setEndTime] = useState<Date | null>();
+  // const [endTime, setEndTime] = useState<Date | null>();
 
   const currentDate = new Date();
   const minDateTomorrow = addDays(currentDate, 1); // Set minDate to tomorrow
@@ -29,14 +31,12 @@ function BookingForm() {
   };
 
   const filterPassedEndTime = (time: Date) => {
-    const selectedStartTime = startTime || currentDate;
+    const selectedStartTime = props.startTime || currentDate;
     const selectedDate = new Date(time);
     return selectedStartTime.getTime() < selectedDate.getTime();
   };
 
   // Calculate total hours
-  const totalHours =
-    startTime && endTime ? differenceInHours(endTime, startTime) : 0;
 
   return (
     <div className="bookingFormRoot">
@@ -48,8 +48,8 @@ function BookingForm() {
         <div className="formItem">
           <label>Start Date and Time</label>
           <DatePicker
-            selected={startTime}
-            onChange={(date: Date | null) => setStartTime(date)}
+            selected={props.startTime}
+            onChange={(date: Date | null) => props.setStartTime(date)}
             showTimeSelect
             filterTime={filterPassedStartTime}
             dateFormat="MMMM d, yyyy h:mm aa"
@@ -61,8 +61,8 @@ function BookingForm() {
         <div className="formItem">
           <label>End date and Time</label>
           <DatePicker
-            selected={endTime}
-            onChange={(date: Date | null) => setEndTime(date)}
+            selected={props.endTime}
+            onChange={(date: Date | null) => props.setEndTime(date)}
             showTimeSelect
             filterTime={filterPassedEndTime}
             dateFormat="MMMM d, yyyy h:mm aa"
@@ -81,11 +81,11 @@ function BookingForm() {
       </div>
       <AuthenticationButton text="ReservNow" onClick={{}} />
       <div className="text">You won't be charged yet</div>
-      {totalHours > 0 && (
+      {props.totalHours > 0 && (
         <div className="receipt">
           <div className="receiptText">
             <div style={{ textDecoration: "underline" }}>
-              ₦2500 x {totalHours} hour(s)
+              ₦2500 x {props.totalHours} hour(s)
             </div>
             <div>₦7500</div>
           </div>

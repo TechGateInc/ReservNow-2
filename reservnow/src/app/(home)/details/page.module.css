@@ -31,7 +31,6 @@
   padding-right: 80px;
 }
 .detailsPageContainer .bookingForm {
-  height: 565px;
   position: sticky;
   top: 20px;
 }
@@ -44,6 +43,9 @@
 }
 .reviewContainer {
   width: 100%;
-  height: 500px;
-  margin-bottom: 100px !important;
+  height: 540px;
 }
+.footer {
+  margin-top: 50px;
+}
+

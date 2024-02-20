@@ -66,3 +66,39 @@
 .showAllReviews:hover {
   background-color: #f6f2f0;
 }
+.reviewPopup {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 0px 40px 0px 40px;
+}
+.leftPopup {
+  width: 30%;
+  /* position: fixed; */
+}
+.popupRatingText {
+  display: flex;
+  align-items: center;
+}
+.popupRanking {
+  margin-top: 40px;
+}
+.popupRanking .title {
+  margin-top: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.rightPopup {
+  width: 60%;
+  height: 100%;
+}
+.rightPopup .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rightPopup .searchBar {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

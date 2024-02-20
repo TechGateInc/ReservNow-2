@@ -1,0 +1,72 @@
+.profileContainer {
+  display: flex;
+  align-items: center;
+}
+.profilePic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.profileContainer .hostInfo {
+  padding-left: 20px;
+}
+.profileContainer .hostInfo p {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.profileContainer .hostInfo span {
+  font-size: 14px;
+  color: grey;
+}
+.reviewIdentity {
+  margin-top: 30px;
+}
+.reviewIdentity .review,
+.reviewIdentity .identity,
+.reviewIdentity,
+.protect {
+  display: flex;
+  align-items: center;
+}
+.duringevent {
+  margin-top: 30px;
+}
+.duringevent span {
+  font-weight: 600;
+}
+.duringevent p {
+  width: 400px;
+  margin-top: 10px;
+  /* color: #899c98; */
+  font-size: 15px;
+}
+.registrationNo,
+.responseTime {
+  margin-top: 15px;
+  font-weight: 300;
+  /* color: #899c98; */
+  font-size: 15px;
+}
+.contactHostBtn {
+  padding: 15px 25px;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.contactHostBtn:hover {
+  background-color: #f6f2f0;
+}
+.protect {
+  margin-top: 30px;
+}
+.protect p {
+  margin-left: 15px;
+  font-size: 12px;
+  color: #899c98;
+  width: 220px;
+}

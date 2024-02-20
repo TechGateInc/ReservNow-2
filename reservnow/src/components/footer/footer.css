@@ -1,0 +1,43 @@
+.footerRoot {
+  width: 100%;
+  background-color: #f7f7f7;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.footerContainer .topSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footerContainer .header {
+  font-weight: bold;
+  font-size: 14px;
+}
+.footerContainer .item {
+  margin-top: 10px;
+  font-weight: normal;
+  color: grey;
+  font-size: 14px;
+}
+.footerContainer .item:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.footerContainer .horinzontalLine {
+  width: 100%;
+  height: 0.5px;
+  background-color: #dddddd;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.footerContainer .bottomSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
+.footerContainer .bottomSection .right {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}

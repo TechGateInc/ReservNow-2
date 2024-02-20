@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 
-const EllipsisText: React.FC<{ maxLines: number }> = ({ maxLines }) => {
+const EllipsisText: React.FC<{ maxLines: number, setAbout: any }> = ({ maxLines, setAbout }) => {
   const contentRef = useRef<HTMLDivElement>(null);
 
   return (
@@ -40,6 +40,7 @@ const EllipsisText: React.FC<{ maxLines: number }> = ({ maxLines }) => {
           marginTop: "10px",
           cursor: "pointer",
         }}
+       onClick={() => setAbout(true)}
       >
         <span
           style={{

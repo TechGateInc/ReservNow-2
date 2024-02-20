@@ -1,0 +1,31 @@
+.hostEventCentreRoot {
+  height: 100vh;
+  width: 100%;
+}
+.hostEventCentreRoot .header {
+  height: 12vh;
+  width: 100%;
+  /* background-color: red; */
+  padding: 30px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hostEventCentreRoot .header button {
+  background-color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+.hostEventCentreRoot .header button:hover {
+  background-color: #dddddd;
+  cursor: pointer;
+}
+.hostEventCentreRoot .content {
+  height: 75vh;
+  width: 100%;
+  /* background-color: yellow; */
+}
+.hostEventCentreRoot .navBtn {
+  height: 12vh;
+}
