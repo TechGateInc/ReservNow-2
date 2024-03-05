@@ -45,7 +45,7 @@ function Popup(props: any) {
             <button className="cancel-icon" onClick={handleClose}>
               <AiOutlineClose />
             </button>
-            <div className="content" style={{ paddingTop: "30px" }}>
+            <div className="content" style={{ paddingTop: "50px" }}>
               {props.children}
             </div>
           </div>

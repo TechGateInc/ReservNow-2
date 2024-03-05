@@ -24,8 +24,10 @@ function details() {
 
   return (
     <div className={styles.detailsRoot}>
-      <div className={styles.header}>
-        <Header />
+      <div className={styles.headerContainer}>
+        <div className={styles.header}>
+          <Header />
+        </div>
       </div>
       <div className={styles.detailsPageContainer}>
         <div className={styles.title}>Telemundo Hotel Centre</div>

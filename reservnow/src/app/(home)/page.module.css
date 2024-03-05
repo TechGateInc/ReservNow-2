@@ -5,9 +5,10 @@
 }
 .landingPageContainer .cardContainer {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2em;
 }
+
 .homeRoot .header {
   border-bottom: 1px solid #f0f0f0;
   position: fixed;

@@ -117,7 +117,7 @@ function Review() {
             </div>
             <div
               style={{
-                maxHeight: "400px",
+                maxHeight: "55vh",
                 overflowY: "auto",
                 width: "100%",
                 position: "absolute",

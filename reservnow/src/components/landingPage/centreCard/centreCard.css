@@ -1,26 +1,16 @@
-.eventCentreContainer {
-    width: 300px;
-    height: 400px;
-  }
-  .eventCentreImgContainer {
-    width: 300px;
-    height: 260px;
-  }
-  .eventCentreContent {
-    margin-top: 5px;
-  }
-  .eventCentreContent .title {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 30px;
-  }
-  .eventCentreContent .rating,
-  .eventCentreContent .subTitle {
-    display: flex;
-    align-items: center;
-  }
-  .eventCentreContent .subTitle {
-    margin-top: 2px;
-  }
-  
+.eventCentreContent {
+  margin-top: 15px;
+}
+.eventCentreContent .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.eventCentreContent .rating,
+.eventCentreContent .subTitle {
+  display: flex;
+  align-items: center;
+}
+.eventCentreContent .subTitle {
+  margin-top: 2px;
+}

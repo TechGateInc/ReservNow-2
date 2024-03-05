@@ -1,0 +1,78 @@
+.addressRoot {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+.addressContainer {
+  /* background-color: red; */
+  width: 700px;
+}
+.addressRoot .title {
+  font-weight: bold;
+  font-size: 30px;
+}
+.addressRoot .subTitle {
+  font-size: 14px;
+  margin-top: 10px;
+  /* margin-bottom: 30px; */
+}
+.location-form {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.location-form input {
+  border-radius: 30px;
+  border: 1px solid #d0d0d0;
+  padding: 20px;
+  width: 45%;
+  margin-bottom: 30px;
+}
+.location-form input::placeholder {
+  color: #c4c4c4;
+}
+.showMapBtn {
+  display: flex;
+  align-items: right;
+  justify-content: flex-end;
+  width: 100%;
+}
+.showMapBtn button {
+  padding: 15px;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}
+.showMapBtn button:hover {
+  cursor: pointer;
+}
+.showMapBtn button:disabled {
+  background-color: grey;
+  cursor: auto;
+}
+.mapContainer {
+  height: 350px;
+  width: 550px;
+  position: relative;
+  margin-top: 50px;
+}
+.addressInput {
+  position: absolute;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  width: 100%;
+}
+.addressInput input {
+  width: 80%;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+}

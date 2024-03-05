@@ -4,13 +4,11 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 400px;
-  /* background-color: red; */
+  height: 60vh;
 }
 .detailsLeft {
   width: 49.7%;
   height: 100%;
-  /* background-color: green; */
   border-radius: 20px 0px 0px 20px;
 }
 .detailsLeft img {
@@ -19,7 +17,6 @@
 .detailsRight {
   width: 49.7%;
   height: 100%;
-  /* background-color: yellow; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
